@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body{
+    background-image: url(bg.jpg);
+    background-color: blue;
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.card {
+    background: hsla(243, 85%, 76%, 0.73);
+    font-family: "Bangers", system-ui;
+    font-size: 25px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    border-style: dotted;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    position: relative;
+  }
+
+img{
+    margin-top: 5%;
+    height: 15;
+    width: 200%;
+    max-width: 800px;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+button{
+    font-family: "Bangers", system-ui;
+}
+
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
